@@ -1,0 +1,122 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Encabezado fijo */
+    top: 0;
+    width: 98%;
+    z-index: 1000;
+}
+
+h1 {
+    margin: 0;
+    animation: spin 4s infinite; /* Animación de giro */
+}
+
+#logo {
+    height: 30px;
+    animation: spin 4s infinite; /* Animación de giro */
+}
+
+nav {
+    
+    margin-top: 10px; /* Espacio para el encabezado fijo */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: rgb(16, 16, 16);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    padding-top: 80px; /* Espacio para el encabezado */
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-height: 300px; /* Alto máximo */
+    overflow-y: auto; /* Barra de desplazamiento si es necesario */
+}
+
+
+
+.back-to-top  {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #007bff;
+    color: white;
+    border-radius: 50%;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display:block; /* Cambiado a block para que ocupe toda la línea */
+    margin: 25px auto; /* Centrado horizontalmente */
+    align-items: center;
+    margin-left: auto;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 24px; /* Tamaño de la flecha */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    right: 0; /* Alinear a la derecha */
+    margin-left: auto; /* Para centrar el margen izquierdo */
+    
+ 
+}
+
+.back-to-top:hover {
+    background: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+/* Animación de giro */
+@keyframes spin {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}

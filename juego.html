@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Adivinanza de Números</title>
+    <link rel="stylesheet" href="juego.css">  <!-- Archivo CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="acercade.html">Acerca de</a></li>
+                <li><a href="formulario.html">formulario</a></li>
+                <li><a href="juego.html">Juego</a></li>
+    
+            </ul>
+        </nav>
+        
+        <h1 class="animated-title">ivanmarfil</h1>
+        <img id="logo" src="logo.png" alt="Logo CURZA">
+    </header>
+    <main>
+        <h1> juego </h1>
+    </main>
+
+    <section id="instrucciones">
+        <p>Elige un nivel de dificultad y trata de adivinar el número secreto.</p>
+        <label for="nivel">Selecciona dificultad: </label>
+        <select id="nivel" onchange="iniciarJuego()">
+            <option value="easy">Fácil (1-50)</option>
+            <option value="medium" selected>Medio (1-100)</option>
+            <option value="hard">Difícil (1-200)</option>
+        </select>
+    </section>
+
+    <section id="juego">
+        <p id="mensaje">Intenta adivinar el número generado aleatoriamente.</p>
+        <input type="number" id="entrada" placeholder="Ingresa un número" />
+        <button onclick="verificarNumero()">Adivinar</button>
+        <p id="intentos">Intentos: 0</p>
+        <p id="tiempo">Tiempo: 0s</p>
+        <button id="reiniciar" onclick="reiniciarJuego()" style="display: none;">Reiniciar Juego</button>
+    </section>
+
+   
+
+    <footer>
+        <p>&copy; 2024 Juego de Adivinanza de Números</p>
+    </footer>
+
+    <script src="juego.js"></script>  <!-- Archivo JS -->
+</body>
+</html>

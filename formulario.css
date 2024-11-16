@@ -1,0 +1,208 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Encabezado fijo */
+    top: 0;
+    width: 98%;
+    z-index: 1000;
+}
+
+h1 {
+    margin: 0;
+    animation: spin 4s infinite; /* Animación de giro */
+}
+
+h3{
+    text-align: center;
+}
+
+#logo {
+    height: 30px;
+    animation: spin 4s infinite; /* Animación de giro */
+}
+
+
+
+/* Animación de giro */
+@keyframes spin {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+
+nav {
+    
+    margin-top: 10px; /* Espacio para el encabezado fijo */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: rgb(16, 16, 16);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+main{
+    text-align: center;
+    padding: 6rem;
+
+}
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 60px;
+    border-radius: 22px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+    margin-top: 20px;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="radio"],
+input[type="checkbox"],
+input[type="submit"],
+button {
+    margin-top: 5px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+table {
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.scroll-to-top {
+    
+    bottom: 20px;
+    right: 20px;
+    background: #007bff;
+    color: white;
+    border-radius: 50%;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display:block; /* Cambiado a block para que ocupe toda la línea */
+    margin: 25px auto; /* Centrado horizontalmente */
+    align-items: center;
+    margin-left: auto;    
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 24px; /* Tamaño de la flecha */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    right: 0; /* Alinear a la derecha */
+    margin-left: auto; /* Para centrar el margen izquierdo */
+    
+}
+
+
+
+.scroll-to-top {
+    background-color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
